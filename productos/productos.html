@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pokemon/cards.css">
+     
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="slide-container"><br><br><br>
+        <form>
+            <input id="inputproductos" class="form-control" type="text" placeholder="producto">
+            <button id="button" type="submit" class="btn btn-primary" >Enviar</button>
+        </form>
+        <div class="wrapper">
+            <div class="clash-card barbarian apiproducto">
+                <h3 id="nomproducto"></h3>
+
+                <img id="img" />
+                
+
+            </div> <!-- end clash-card barbarian-->
+        </div> <!-- end wrapper -->
+    </div> 
+    
+    <div class="row container">
+        <button id="button" type="submit" class="btn btn-primary" onclick="añadirp()">agregar</button>
+        <button id="button" type="submit" class="btn btn-primary" onclick="eliminarp()">eliminar</button>
+        <button id="button" type="submit" class="btn btn-primary" onclick="actualizarp()">actualizar</button>
+
+
+    </div>
+    <div>
+        <input type="text" id="listar">
+        <button id="blistar">listar</button>
+        <table>
+            <thead>
+                <th id="titulo">titulo</th>
+                <th id="precio">precio</th>
+                <th id="cat" >categoria</th>
+            </thead>
+        </table>
+    </div>
+    
+    <script src="cardsProductos.js"></script>   <!-- end container -->
+</body>
+
+</html>
